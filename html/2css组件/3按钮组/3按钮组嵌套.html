@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>按钮组嵌套</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.css">
+    <script src="../../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../../js/bootstrap.js"></script>
+    <script src="../../../js/holder.min.js"></script>
+    <style>
+        .container{
+            height: 3000px;
+        }
+        .row{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-header">Bootstrap</h1>
+        <div class="btn-group">
+            <button class="btn btn-primary">aaa</button>
+            <button class="btn btn-primary">bbb</button>
+            <div class="btn-group">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">ccc<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li>aaaaaaaa</li>
+                    <li>aaaaaaaa</li>
+                    <li>aaaaaaaa</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>自定义幻灯片-1</title>
+    <script src="../../../js/holder.min.js"></script>
+    <script src="../../../js/jquery-1.12.4.min.js"></script>
+    <style>
+        .container{
+            width: 1140px;
+            padding:0px 15px;
+            margin:0 auto;
+        }
+        .window{
+            height:300px;
+            overflow: hidden;
+            position: relative;
+        }
+        .window img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <h1 class="page-header">Bootstrap</h1>
+        <div class="window">
+            <img src="../../../image/JMS1.jpg">
+            <img src="holder.js/100px200">
+            <img src="../../../image/JMS1.jpg">
+        </div>
+    </div>
+</body>
+<script>
+    setInterval(function () {
+       imgs=$('.window img');
+       
+       imgs.eq(2).stop().fadeOut(500,function () {
+          $(this).show().prependTo('.window');
+       });
+    },1000);
+</script>
+</html>

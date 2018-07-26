@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>将左边的图片位置空出</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.css">
+    <script src="../../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../../js/bootstrap.js"></script>
+    <script src="../../../js/holder.min.js"></script>
+    <style>
+        .container{
+            height: 3000px;
+        }
+        .row{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="../../../image/JMS1.jpg" width="100%">
+            </div>
+            <!--将左边的图片位置空出-->
+            <div class="col-md-3 col-md-offset-3">
+                <img src="../../../image/JMS1.jpg" width="100%">
+            </div>
+            <div class="col-md-3">
+                <img src="../../../image/JMS1.jpg" width="100%">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

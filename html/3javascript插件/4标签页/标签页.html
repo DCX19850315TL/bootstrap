@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>标签页</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.css">
+    <script src="../../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../../js/bootstrap.js"></script>
+    <script src="../../../js/holder.min.js"></script>
+    <style>
+        body{
+            padding-top: 60px;
+            position: relative;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#mynav" data-offset="150">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="mynav">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li class="active"><a href="#linux">linux</a></li>
+          <li><a href="#js">js</a></li>
+          <li><a href="#php">php</a></li>
+          <li><a href="#html5">html5</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#linux" data-toggle="tab">linux</a></li>
+            <li><a href="#php" data-toggle="tab">php</a></li>
+            <li><a href="#js" data-toggle="tab">js</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="linux" class="tab-pane active fade in">
+                aaaaaaaaaaaaaaaaaaaaaa
+            </div>
+            <div id="php" class="tab-pane fade">
+                bbbbbbbbbbbbbbbbbbbbbb
+            </div>
+            <div id="js" class="tab-pane fade">
+                cccccccccccccccccccccc
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>下拉菜单</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.css">
+    <script src="../../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../../js/bootstrap.js"></script>
+    <script src="../../../js/holder.min.js"></script>
+    <style>
+        .container{
+            height: 3000px;
+        }
+        .row{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-header">Bootstrap</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary" data-toggle="dropdown">更多选项<span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <!--下拉菜单做成标题-->
+                <li class="dropdown-header">标题</li>
+                <li><a href="">百度</a></li>
+                <li><a href="">百度</a></li>
+                <!--下拉菜单分割线-->
+                <li class="divider"></li>
+                <li><a href="">百度</a></li>
+                <!--下拉菜单禁用，但是只是页面显示禁用，还要结合jquery来进行后台的数据禁用-->
+                <li class="disabled"><a href="">百度</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

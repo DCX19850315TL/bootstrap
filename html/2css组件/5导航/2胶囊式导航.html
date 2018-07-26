@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>胶囊式导航</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.css">
+    <script src="../../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../../js/bootstrap.js"></script>
+    <script src="../../../js/holder.min.js"></script>
+    <style>
+        .container{
+            height: 3000px;
+        }
+        .navs{
+            padding: 15px 15px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap</h1>
+        <div class="col-md-2">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active">
+                    <a href="">linux</a>
+                </li>
+                <li class="">
+                    <a href="">python</a>
+                </li>
+                <li class="">
+                    <a href="">java</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <div class="row navs">
+                <img src="holder.js/100px200">
+                <p>linux ix very much</p>
+            </div>
+            <div class="row navs">
+                <img src="holder.js/100px200">
+                <p>python ix very much</p>
+            </div>
+            <div class="row navs">
+                <img src="holder.js/100px200">
+                <p>java ix very much</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('li').mouseenter(function () {
+            $(this).addClass('active');
+            $('li').not($(this)).removeClass('active');
+
+            idx=$(this).index('li');
+            $('.navs').eq(idx).stop().show(1000);
+            $('.navs').not($('.navs').eq(idx)).stop().hide(100);
+        });
+        $('.navs').eq(0).show(10);
+    </script>
+</body>
+</html>

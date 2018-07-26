@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>折叠效果_js</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.css">
+    <script src="../../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../../js/bootstrap.js"></script>
+    <script src="../../../js/docs.min.js"></script>
+</head>
+<body>
+    <div class="container">
+       <h1 class="page-header">Bootstrap</h1>
+        <div class="panel-group">
+            <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title"><a href="javascript:">linux</a></div>
+            </div>
+            <div class="panel-body">
+                linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!linux ix very much!
+            </div>
+        </div>
+
+            <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title"><a href="javascript:">php</a></div>
+            </div>
+            <div class="panel-body">
+                php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!php is very much!
+            </div>
+        </div>
+
+            <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title"><a href="javascript:">js</a></div>
+            </div>
+            <div class="panel-body">
+                js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!js is very much!
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.panel-body').hide().first().show();
+
+    $('.panel-title').click(function () {
+        $(this).parent().next().slideDown();
+        $('.panel-body').not($(this).parent().next()).slideUp();
+    });
+</script>
+</html>
